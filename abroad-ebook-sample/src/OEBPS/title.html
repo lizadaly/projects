@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Title page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="tilt.css" />
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="jquery.path.js"></script>
+    <script type="text/javascript" src="tilt.js"></script>
+    <meta name="viewport" content="width=600,height=800"/>
+  </head>
+  <body id="title">
+    <div>
+      <img id="background" src="backgrounds/title.jpg" alt="Abroad" />
+      <img id="title-bird1" class="object animates" src="objects/title-bird1.png" alt="A small bird" />
+      <img id="title-bird2" class="object animates" src="objects/title-bird2.png" alt="Another small bird" />
+      <img id="title-bird3" class="object animates" src="objects/title-bird3.png" alt="Another small bird" />
+    </div>
+    <script type="text/javascript">
+      $(".animates").click(function () {
+       $('#title-bird1').animate({ 
+        path : new $.path.bezier({
+        start: { 
+          x: 0, 
+          y: 0, 
+          angle: 10
+        },  
+        end: { 
+         x: 640,
+         y: 110, 
+         angle: -10, 
+         length: 0.25
+       }
+       })
+       }, 3000, 'swing' 
+      );
+      $('#title-bird2').animate({ 
+        path : new $.path.bezier({
+        start: { 
+          x: 0, 
+          y: 0, 
+          angle: 50
+        },  
+        end: { 
+         x: 640,
+         y: 110, 
+         angle: -10, 
+         length: 0.25
+       }
+       })
+       }, 4000, 'swing' 
+      );
+      $('#title-bird3').animate({ 
+        path : new $.path.bezier({
+        start: { 
+          x: 0, 
+          y: 0, 
+          angle: -50
+        },  
+        end: { 
+         x: 640,
+         y: 110, 
+         angle: -10, 
+         length: 0.25
+       }
+       })
+       }, 4000, 'swing' 
+      );
+
+      
+      });
+    </script>
+  </body>
+</html>
+    

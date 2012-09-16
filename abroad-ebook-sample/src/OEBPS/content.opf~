@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" unique-identifier="bookid">
+  <metadata>
+    <dc:identifier id="bookid">urn:uuid:24309401-b7d4-4433-b8c3-01ba118d64xx</dc:identifier>
+    <dc:title >Tilt test</dc:title>
+    <dc:rights >Public domain</dc:rights>
+    <dc:publisher >Threepress Consulting Inc.</dc:publisher>
+    <dc:date >2010-04-22</dc:date>
+    <dc:description >Tilt test for use in EPUB readers</dc:description>
+    <dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="Daly, Liza">Liza Daly</dc:creator>
+    <dc:language>en</dc:language>
+  </metadata>
+  <manifest>
+    <item id="ncxtoc" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+    <item media-type="text/css" id="css" href="tilt.css"/>
+    <item media-type="text/javascript" id="js1" href="tilt.js"/>
+    <item media-type="text/javascript" id="js2" href="jquery-1.4.4.min.js"/>
+    <item media-type="text/javascript" id="js3" href="jquery.path.js"/>
+    <item media-type="text/javascript" id="js4" href="processing-1.0.0.min.js"/>
+    <item media-type="text/javascript" id="js5" href="processing-init.js"/>
+    <item media-type="image/jpeg" id="bg1" href="backgrounds/crossing-the-channel.jpg"/>
+    <item media-type="image/jpeg" id="bg2" href="backgrounds/title.jpg"/>
+    <item media-type="image/jpeg" id="bg3" href="backgrounds/cover.jpg"/>
+    <item media-type="image/png" id="obj1" href="objects/crossing-ship.png"/>
+    <item media-type="image/png" id="obj2" href="objects/title-bird1.png"/>
+    <item media-type="image/png" id="obj3" href="objects/title-bird2.png"/>
+    <item media-type="image/png" id="obj4" href="objects/title-bird3.png"/>
+    <item media-type="audio/mp3" id="obj5" href="train.mp3"/>
+    <item id="content1" href="crossing-the-channel.html" media-type="application/xhtml+xml"/>
+    <item id="content2" href="title.html" media-type="application/xhtml+xml"/>
+    <item id="content3" href="cover.html" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncxtoc">
+    <itemref idref="content1" linear="yes"/>
+    <itemref idref="content2" linear="yes"/>
+    <itemref idref="content3" linear="yes"/>
+  </spine>
+</package>
