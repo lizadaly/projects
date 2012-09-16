@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xml:lang="en"
+         version="3.0" 
+         unique-identifier="bookid">
+  <metadata>
+
+    <dc:title id="title">EPUB3 interactivity demo</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+
+
+    <dc:creator id="creator">Thomas Crane</dc:creator>
+    <meta refines="#creator" property="file-as">Crane, Thomas</meta>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+
+    <dc:creator id="illustrator">Ellen Elizabeth Houghton</dc:creator>
+    <meta refines="#illustrator" property="file-as">Houghton, Ellen Elizabeth</meta>
+    <meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
+
+    <dc:identifier id="bookid">urn:uuid:24309401-b7d4-4433-b8c3-01ba118d64</dc:identifier>
+    <meta refines="#bookid" property="identifier-type" scheme="xsd:string">15</meta>
+
+    <dc:rights>This work, (Abroad with EPUB 3 demo), identified by Liza Daly, is free of known copyright restrictions</dc:rights>
+
+    <dc:contributor id="contrib1">Liza Daly</dc:contributor>
+    <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
+
+    <dc:date>1882</dc:date>
+
+    <dc:publisher>London ; Belfast ; New York : Marcus Ward &amp; Co.</dc:publisher>
+    <dc:contributor>University of California Libraries</dc:contributor>
+
+    <dc:subject>France -- Description and travel Juvenile literature</dc:subject>
+
+    <dc:language>en</dc:language>
+
+    <meta property="dcterms:modified">2012-09-16T12:00:00Z</meta>
+
+  </metadata>
+  <manifest>
+    <item media-type="text/css" id="css" href="tilt.css"/>
+    <item media-type="text/javascript" id="js1" href="tilt.js"/>
+    <item media-type="text/javascript" id="js2" href="jquery-1.4.4.min.js"/>
+    <item media-type="text/javascript" id="js3" href="jquery.path.js"/>
+    <item media-type="text/javascript" id="js4" href="processing-1.0.0.min.js"/>
+    <item media-type="text/javascript" id="js5" href="processing-init.js"/>
+    <item media-type="image/jpeg" id="bg1" href="backgrounds/crossing-the-channel.jpg"/>
+    <item media-type="image/jpeg" id="bg2" href="backgrounds/title.jpg"/>
+    <item media-type="image/jpeg" id="bg3" href="backgrounds/cover.jpg"/>
+    <item media-type="image/png" id="obj1" href="objects/crossing-ship.png"/>
+    <item media-type="image/png" id="obj2" href="objects/title-bird1.png"/>
+    <item media-type="image/png" id="obj3" href="objects/title-bird2.png"/>
+    <item media-type="image/png" id="obj4" href="objects/title-bird3.png"/>
+    <item media-type="audio/mp3" id="obj5" href="train.mp3"/>
+    <item media-type="image/png" id="obj6" href="objects/smoke.png"/>
+
+
+    <item properties="scripted" id="content1" href="crossing-the-channel.xhtml" media-type="application/xhtml+xml"/>
+    <item properties="scripted" id="content2" href="title.xhtml" media-type="application/xhtml+xml"/>
+    <item properties="scripted" id="content3" href="cover.xhtml" media-type="application/xhtml+xml"/>
+
+    <item properties="nav" id="end" href="toc.xhtml" media-type="application/xhtml+xml" />
+
+  </manifest>
+  <spine>
+    <itemref idref="content1"/>
+    <itemref idref="content2"/>
+    <itemref idref="content3"/>
+  </spine>
+</package>

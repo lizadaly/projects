@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" version="3.0" unique-identifier="bookid">
+<package xmlns="http://www.idpf.org/2007/opf" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xml:lang="en"
+         version="3.0" 
+         unique-identifier="bookid">
   <metadata>
-    <dc:identifier id="bookid">urn:uuid:24309401-b7d4-4433-b8c3-01ba118d64xx</dc:identifier>
-    <dc:title >Tilt test</dc:title>
-    <dc:rights >Public domain</dc:rights>
-    <dc:publisher >Threepress Consulting Inc.</dc:publisher>
-    <dc:date >2010-04-22</dc:date>
-    <dc:description >Tilt test for use in EPUB readers</dc:description>
+    <dc:identifier id="bookid">urn:uuid:24309401-b7d4-4433-b8c3-01ba118d64</dc:identifier>
+    <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">15</meta>
+
+    <dc:title id="title">EPUB3 interactivity demo</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+
+
+    <dc:creator id="creator">Thomas Crane</dc:creator>
+    <meta refines="#creator" property="file-as">Crane, Thomas</meta>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+
+    <dc:creator id="illustrator">Ellen Elizabeth Houghton</dc:creator>
+    <meta refines="#illustrator" property="file-as">Houghton, Ellen Elizabeth</meta>
+    <meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
+
+    <dc:rights>This work, (Abroad with EPUB 3 demo), identified by Liza Daly, is free of known copyright restrictions</dc:rights>
+
+    <dc:contributor id="contrib1">Liza Daly</dc:contributor>
+    <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
+
+    <dc:date>1882</dc:date>
+
+    <dc:publisher>London ; Belfast ; New York : Marcus Ward &amp; Co.</dc:publisher>
+    <dc:contributor>University of California Libraries</dc:contributor>
+
+    <dc:subject>France -- Description and travel Juvenile literature</dc:subject>
+
     <dc:creator xmlns:opf="http://www.idpf.org/2007/opf" opf:file-as="Daly, Liza">Liza Daly</dc:creator>
     <dc:language>en</dc:language>
+
   </metadata>
   <manifest>
     <item media-type="text/css" id="css" href="tilt.css"/>
@@ -32,8 +58,8 @@
 
   </manifest>
   <spine>
-    <itemref idref="content1" linear="yes"/>
-    <itemref idref="content2" linear="yes"/>
-    <itemref idref="content3" linear="yes"/>
+    <itemref idref="content1"/>
+    <itemref idref="content2"/>
+    <itemref idref="content3"/>
   </spine>
 </package>

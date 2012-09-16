@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <title>Cover</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="tilt.css" />
     <script src="processing-1.0.0.min.js" type="text/javascript"></script>   
     <script src="processing-init.js" type="text/javascript"></script>   
@@ -96,8 +95,12 @@ void draw(){
 
 /* ]]> */
       </script>
-      <canvas class="object" id="smoke-canvas"></canvas> 
-      <audio src="train.mp3" id="audio-player" autobuffer="autobuffer"></audio>
+      <canvas class="object" id="smoke-canvas">
+        <img src="objects/smoke.png" alt="Image of steam" />
+      </canvas> 
+      <audio src="train.mp3" id="audio-player">
+        Sound of a train horn.
+      </audio>
       <script type="text/javascript">
         var smoke = document.getElementById('smoke-canvas');
         var audio = document.getElementById('audio-player');
